@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express.js';
 import path from 'path';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
