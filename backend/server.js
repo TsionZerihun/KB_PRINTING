@@ -12,7 +12,7 @@ dotenv.config();
 
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => {
+  .then(() => {np
     console.log("connected to db");
   })
   .catch((err) => {
@@ -37,9 +37,9 @@ app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
 
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "../portfolio_ecom/build")));
+app.use(express.static(path.join(__dirname, "/portfolio_ecom/build")));
 app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "../portfolio_ecom/build/index.html"))
+  res.sendFile(path.join(__dirname, "/portfolio_ecom/build/index.html"))
 );
 
 app.use((err, req, res, next) => {

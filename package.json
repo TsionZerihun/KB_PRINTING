@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../portfolio_ecom && npm install && npm run build --force",
+    "build": "cd backend && npm install --force && cd ../portfolio_ecom && npm install --force && npm run build --force",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
